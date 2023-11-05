@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Card from "./components/common/Card";
 import TestimonialCard from "./components/common/TestimonialCard";
+import ImageSlider from "./components/Slider";
 
 function App() {
   return (
@@ -9,14 +10,14 @@ function App() {
       <div className="w-full lg:w-7/12 bg-overlay lg:pl-16 pt-20 px-8">
         <div className="lg:flex">
           <Card
-            className="w-full lg:w-1/2"
+            className="w-full lg:w-1/2 flex-1"
             image={"/bell.svg"}
             title={"Get notified when a highly correlated whale makes a move"}
             description={
               "Find out when a certain whale moves more than any preset amount on-chain or when a dormant whale you care about becomes active."
             }
           />
-          <div className="w-full lg:w-1/2">Carousel</div>
+          <ImageSlider />
         </div>
 
         <div className="flex flex-col-reverse lg:flex-row lg:pr-16">
